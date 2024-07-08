@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Delivery Application</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Grocery Delivery</h1>
+            <nav>
+                <a href="#" id="shopLink">Shop</a>
+                <a href="#" id="cartLink">Cart</a>
+                <a href="#" id="ordersLink">Orders</a>
+            </nav>
+        </header>
+        <main>
+            <section id="shop">
+                <h2>Shop Groceries</h2>
+                <div class="product" data-id="1">
+                    <h3>Apple</h3>
+                    <p>$1.00 each</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product" data-id="2">
+                    <h3>Banana</h3>
+                    <p>$0.50 each</p>
+                    <button>Add to Cart</button>
+                </div>
+                <!-- Add more products as needed -->
+            </section>
+            <section id="cart" style="display:none;">
+                <h2>Your Cart</h2>
+                <ul id="cartItems"></ul>
+                <button id="checkoutButton">Checkout</button>
+            </section>
+            <section id="orders" style="display:none;">
+                <h2>Your Orders</h2>
+                <ul id="orderItems"></ul>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 Grocery Delivery</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
