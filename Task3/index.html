@@ -1,1 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Learning Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>E-Learning Platform</h1>
+            <nav>
+                <a href="#" id="homeLink">Home</a>
+                <a href="#" id="coursesLink">Courses</a>
+                <a href="#" id="profileLink">Profile</a>
+            </nav>
+        </header>
+        <main>
+            <section id="home">
+                <h2>Welcome to the E-Learning Platform</h2>
+                <p>Browse and enroll in courses to enhance your knowledge and skills.</p>
+            </section>
+            <section id="courses" style="display:none;">
+                <h2>Courses</h2>
+                <div class="course" data-id="1">
+                    <h3>Introduction to HTML</h3>
+                    <p>Learn the basics of HTML.</p>
+                    <button>Enroll</button>
+                </div>
+                <div class="course" data-id="2">
+                    <h3>JavaScript for Beginners</h3>
+                    <p>Understand the fundamentals of JavaScript.</p>
+                    <button>Enroll</button>
+                </div>
+                <!-- Add more courses as needed -->
+            </section>
+            <section id="profile" style="display:none;">
+                <h2>Your Profile</h2>
+                <p>Name: <span id="profileName">John Doe</span></p>
+                <h3>Enrolled Courses</h3>
+                <ul id="enrolledCourses"></ul>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 E-Learning Platform</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
 
